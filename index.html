@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Train Seat Booking</title>
+  <!-- Link to External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Train Seat Booking</h1>
+    </header>
+    <section class="instructions">
+      <p><strong>Available Seats:</strong> <span class="available-color">Green</span></p>
+      <p><strong>Booked Seats:</strong> <span class="booked-color">Red</span></p>
+      <p><strong>Your Selected Seats:</strong> <span class="selected-color">Blue</span></p>
+    </section>
+    <section class="booking">
+      <label for="seats">Enter number of seats to book:</label>
+      <input type="number" id="seats" min="1" max="7">
+      <button id="bookSeats">Book Seats</button>
+    </section>
+    <section class="seats-container" id="seatsContainer">
+      <!-- Dynamic Seat Buttons -->
+    </section>
+  </div>
+  <!-- Link to External JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
